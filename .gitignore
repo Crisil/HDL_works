@@ -1,0 +1,7 @@
+*.out
+*.vcd
+*.vpp
+*.vscode/
+*.dot*
+synth.v
+*.ys
