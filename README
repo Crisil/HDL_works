@@ -1,2 +1,2 @@
-iverilog -o <output> <file>
-vvp output
+This are a set of verilog experiemnts performed by me to learn verilog coding. 
+All the examples are simulated in Arch linux using icarus verilog
