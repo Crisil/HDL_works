@@ -1,3 +1,10 @@
+// A verilog code to perform transposition sorting
+// It is executed in phases, there are even and odd phase
+// In even phase entries with even index are compare against there
+// right neighbours and swapped if required
+// In odd phase entries with odd index are compared against there
+// right neighbours and swapped if required
+// sorts n elements in n clock cycle (n is even)
 module top #(parameter n= 8, parameter k = 8)
 (
   input clk, 
