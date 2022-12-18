@@ -48,11 +48,11 @@ module tb;
 		rstn = 1;
 		wait_cycles = $urandom_range(0, 10);
 		delay(wait_cycles);
-
+		
 		i_valid = 1'b1;
-		Xin = 2;
+		Xin = 5;
 		Yin = 3;
-		@(negedge clk);
+		@(posedge clk);
 		i_valid = 1'b0;
 		
 		wait_cycles = $urandom_range(1, 30);
@@ -69,7 +69,7 @@ module tb;
 		begin
 			while (dly) begin
 				//$display("[$delay] time=%0t dly=%0d", $time, dly);
-				@(negedge clk);
+				@(posedge clk);
 				dly--;
 			end
 		end
